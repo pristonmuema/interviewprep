@@ -1,6 +1,5 @@
-package com.glovo.interview;
+package com.glovo.interview.arrays;
 
-import com.glovo.interview.sumtwo.ArraysPlayground;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import java.util.List;
@@ -8,10 +7,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 @QuarkusTest
-class ArraysPlaygroundTest {
+class TwoSumArrayTest {
 
 	@Inject
-	ArraysPlayground sum;
+	TwoSumArray sum;
 
 	@Test
 	void testWhenListIsProvided() {

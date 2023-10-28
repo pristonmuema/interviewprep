@@ -1,10 +1,10 @@
-package com.glovo.interview.sumtwo;
+package com.glovo.interview.arrays;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import java.util.List;
 
 @ApplicationScoped
-public class ArraysPlayground {
+public class TwoSumArray {
 
 	public List<Integer> sumList(List<Integer> list, int target) {
 		int length = list.size();

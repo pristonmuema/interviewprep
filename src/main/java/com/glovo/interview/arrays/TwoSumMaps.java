@@ -1,11 +1,11 @@
-package com.glovo.interview.sumtwo;
+package com.glovo.interview.arrays;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import java.util.HashMap;
 import java.util.Map;
 
 @ApplicationScoped
-public class MapsPlayground {
+public class TwoSumMaps {
 
 	public int[] twoSum(int[] list, int target) {
 		Map<Integer, Integer> integerMap = new HashMap<>();

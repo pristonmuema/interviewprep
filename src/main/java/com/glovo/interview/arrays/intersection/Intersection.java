@@ -21,4 +21,18 @@ public class Intersection {
 		}
 		return false;
 	}
+
+	public boolean isIntersect1(int[] list1, int[] list2) {
+		if (list1.length == 0 || list2.length == 0) {
+			return false;
+		}
+		for (int i = 0; i < list1.length; i++) {
+			for (int j = 0; j < list2.length; j++) {
+				if (Objects.equals(list1[i], list2[j])) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 }

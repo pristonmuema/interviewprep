@@ -4,10 +4,12 @@ import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import java.util.List;
 import java.util.stream.Stream;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -43,5 +45,11 @@ class IntersectionTest {
 		                 Arguments.arguments(List.of(1, 7), List.of(3, 5, 8, 9)),
 		                 Arguments.arguments(List.of(), List.of(3, 5, 8, 9))
 		                );
+	}
+
+	@Test
+	void isIntersect1() {
+		var res = intersection.isIntersect1(new int[]{1,3}, new int[]{3, 4});
+		assertTrue(res);
 	}
 }

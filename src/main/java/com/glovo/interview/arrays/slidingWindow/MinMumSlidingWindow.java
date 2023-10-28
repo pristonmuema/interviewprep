@@ -21,11 +21,12 @@ public class MinMumSlidingWindow {
 		}
 		Map<Character, Integer> map = new HashMap<>();
 		for (char c : t.toCharArray()) {
-			if (map.containsKey(c)) {
-				map.put(c, map.get(c) + 1);
-			} else {
-				map.put(c, 1);
-			}
+			map.put(c, map.getOrDefault(c, 0) + 1);
+//			if (map.containsKey(c)) {
+//				map.put(c, map.get(c) + 1);
+//			} else {
+//				map.put(c, 1);
+//			}
 		}
 		// mapCounter = 0 denotes condition is satisfied and we got solution
 		int mapCounter = map.size();
